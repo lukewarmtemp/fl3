@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'full_test = fl3.handle_commands:main'
         ],
     },
 )
