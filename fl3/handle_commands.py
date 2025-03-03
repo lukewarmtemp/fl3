@@ -55,22 +55,22 @@ class CommNode(Node):
         self.set_orientation.w = -1.0
 
         # # inital global variables
-        # self.WAYPOINTS = None
-        # self.WAYPOINTS_RECEIVED = False
-        # self.set_this_waypoint = False
-        # self.waypoint_index = 0
-        # self.waypoint = None
-
-        # tolerance for grading
-        self.tol_radius = 0.1 #0.4
-
-        # inital global variables
-        h = 0.5
-        self.WAYPOINTS = np.array([[0, 0, h],[0, h, 0],[h, 0, 0],[h, h, h]])
-        self.WAYPOINTS_RECEIVED = True
+        self.WAYPOINTS = None
+        self.WAYPOINTS_RECEIVED = False
         self.set_this_waypoint = False
         self.waypoint_index = 0
         self.waypoint = None
+
+        # tolerance for grading
+        self.tol_radius = 0.2 #0.4
+
+        # inital global variables
+        # h = 0.5
+        # self.WAYPOINTS = np.array([[0, 0, h],[0, h, 0.1],[h, 0, 0.1],[h, h, h]])
+        # self.WAYPOINTS_RECEIVED = True
+        # self.set_this_waypoint = False
+        # self.waypoint_index = 0
+        # self.waypoint = None
         self.in_test = False
 
         ############################
